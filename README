@@ -1,0 +1,4 @@
+
+#This is an C++ project devloped using Eclipse
+
+#Needs to be compiled with g++ -std=c++0x as C++ 11
