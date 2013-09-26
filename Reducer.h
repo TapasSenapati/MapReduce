@@ -7,6 +7,7 @@
 
 #ifndef REDUCER_H_
 #define REDUCER_H_
+#include <string>
 
 class Reducer{
 public:

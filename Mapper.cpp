@@ -16,7 +16,7 @@ void Mapper::writeinter(std::string filename)
 {
 	std::string line,dummyline;
 	std::ifstream infile (filename);
-	std::ofstream outfile ("intermediate.txt");
+	std::ofstream outfile (filename+"_inter.txt");
 	std::vector<int> temp;
 	int node;
 
@@ -34,7 +34,8 @@ void Mapper::writeinter(std::string filename)
 		infile.close();
 	}
 	else
-		std::cout << "\nUnable to open file for reading/writing..\n";
+			std::cout << "\nUnable to open input file for reading..\n";
+
 
 	/*for(int i = 0; i < temp.size(); i++ ) {
 	   std::cout << temp[i] << " ";
@@ -46,6 +47,9 @@ void Mapper::writeinter(std::string filename)
 			outfile << temp[i] << " " << 1 << "\n";
 		outfile.close();
 	}
+	else
+		std::cout << "\nUnable to open intermediate file for writing..\n";
+
 
 }
 
