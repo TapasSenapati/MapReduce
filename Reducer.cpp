@@ -12,7 +12,9 @@
 #include <istream>
 #include <sstream>
 #include <iterator>
-#include <unordered_map>
+//use unoordered ap for better efficiency but unosrted output
+//#include <unordered_map>
+#include <map>
 #define _DEFINE_DEPRECATED_HASH_CLASSES 0
 
 void Reducer::computedegree(std::string filename)
@@ -20,7 +22,7 @@ void Reducer::computedegree(std::string filename)
 	std::string line,dummyline;
 	std::ifstream infile (filename+"_inter.txt");
 	std::ofstream outfile (filename+"_degree.txt");
-	std::unordered_map <int, int> degree;
+	std::map <int, int> degree;
 
 	int node,value;
 
